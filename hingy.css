@@ -1,0 +1,108 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Poppins:wght@400;600&family=Montserrat:wght@300;400&display=swap');
+
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+h1 {
+    font-family: 'Iceland', cursive;
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 255, 255, 0.5); /* Glowing effect */
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Glow animation for the header */
+@keyframes glow {
+    0% {
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 255, 255, 1);
+    }
+}
+
+/* About Me Section */
+.about-me {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.about-me:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.about-me p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.home-link {
+    color: #ffeb3b;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.8rem 2rem;
+    border: 2px solid #ffeb3b;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-link:hover {
+    background-color: #ffeb3b;
+    color: #101010;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .about-me {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .home-link {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+}

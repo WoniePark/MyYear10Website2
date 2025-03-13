@@ -1,0 +1,137 @@
+/* A simple CSS reset */
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Roboto:wght@400;500&display=swap');
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Reset for images to ensure they are 100% of the parent container width */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Global body background and text colors */
+body {
+    background-color: #101010;
+    color: #f0f0f0;
+}
+
+/* Heading 1 Styling */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('images/digiport.png');
+    height: 40vh;  /* Adjusted the height */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    padding: 0 2rem;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Topic Title Styling */
+.topic-title {
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem 2.5rem;
+    background-color: #3900b3;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+/* Three-column grid layout for topic content */
+.topic-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+/* Styling for individual topic cards */
+.topic-card {
+    background-color: #4a00ba;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 1s ease-in-out;
+}
+
+.topic-card:hover {
+    transform: translateY(-30px);
+}
+
+.topic-card-text {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1e0477;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+/* Link styling */
+a {
+    color: #90caf9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #a80000;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .topic-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-text {
+        font-size: 3rem;
+    }
+
+    .topic-title {
+        font-size: 2rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
