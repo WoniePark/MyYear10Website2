@@ -84,11 +84,6 @@ footer {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.home-link:hover {
-    background-color: #ffeb3b;
-    color: #101010;
-    transform: scale(1.1);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
